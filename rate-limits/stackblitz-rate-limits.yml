@@ -1,0 +1,32 @@
+---
+specification: API Commons Rate Limits
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/RateLimits
+provider: StackBlitz
+providerId: stackblitz
+created: '2026-06-12'
+modified: '2026-06-12'
+reconciled: true
+tags:
+  - Rate Limiting
+  - WebContainers
+  - Developer Tools
+description: StackBlitz limits WebContainer API sessions to 500 per month for commercial plan customers; open source use is free without session caps; enterprise licenses required for production for-profit use beyond included quotas.
+sources:
+  - https://developer.stackblitz.com/platform/api/webcontainer-api
+  - https://webcontainers.io/enterprise
+headers:
+  retryAfter: Retry-After
+responseCodes:
+  throttled: 429
+limits:
+  - name: WebContainer API Sessions (Commercial Plan)
+    scope: org
+    metric: sessions_per_month
+    limit: 500
+    timeFrame: month
+  - name: WebContainer API Sessions (Open Source / Non-Commercial)
+    scope: user
+    metric: sessions_per_month
+    limit: -1
+    timeFrame: month

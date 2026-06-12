@@ -1,0 +1,238 @@
+---
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: StackBlitz
+providerId: stackblitz
+created: '2026-06-12'
+modified: '2026-06-12'
+reconciled: true
+tags:
+  - Developer Tools
+  - IDE
+  - WebContainers
+  - Node.js
+description: StackBlitz offers a free personal tier, Pro and Teams paid tiers, and custom Enterprise pricing with WebContainer API access.
+sources:
+  - https://stackblitz.com/pricing
+plans:
+  - id: stackblitz-personal
+    name: Personal
+    type: free
+    description: Free plan for individual developers with unlimited public projects and core browser IDE features.
+    entries:
+      - label: Public Projects
+        name: public_projects
+        type: boolean
+        metric: projects
+        limit: -1
+        timeFrame: month
+        geo: global
+        unit: 1
+        price: '0'
+        userMultiplied: false
+      - label: File Upload Size
+        name: file_upload_size
+        type: quota
+        metric: MB
+        limit: 1
+        timeFrame: usage
+        geo: global
+        unit: 1
+        price: '0'
+        userMultiplied: false
+      - label: GitHub Repo Access
+        name: github_repo_access
+        type: boolean
+        metric: feature
+        limit: 1
+        timeFrame: month
+        geo: global
+        unit: 1
+        price: '0'
+        userMultiplied: false
+  - id: stackblitz-pro
+    name: Pro
+    type: paid
+    description: Professional plan for individual developers needing unlimited file uploads, local backend connections, and CORS API access.
+    entries:
+      - label: Monthly Subscription
+        name: monthly_subscription
+        type: boolean
+        metric: subscription
+        limit: 1
+        timeFrame: month
+        geo: global
+        unit: 1
+        price: '25'
+        userMultiplied: false
+      - label: Annual Subscription (per month)
+        name: annual_subscription
+        type: boolean
+        metric: subscription
+        limit: 1
+        timeFrame: month
+        geo: global
+        unit: 1
+        price: '18'
+        userMultiplied: false
+      - label: Unlimited File Uploads
+        name: unlimited_file_uploads
+        type: boolean
+        metric: feature
+        limit: -1
+        timeFrame: month
+        geo: global
+        unit: 1
+        price: '0'
+        userMultiplied: false
+      - label: Local Backend Connections
+        name: local_backend_connections
+        type: boolean
+        metric: feature
+        limit: 1
+        timeFrame: month
+        geo: global
+        unit: 1
+        price: '0'
+        userMultiplied: false
+      - label: CORS API Access
+        name: cors_api_access
+        type: boolean
+        metric: feature
+        limit: 1
+        timeFrame: month
+        geo: global
+        unit: 1
+        price: '0'
+        userMultiplied: false
+  - id: stackblitz-teams
+    name: Teams
+    type: paid
+    description: Teams plan for collaborative development with private collections, private GitHub repos, private NPM registry, and team management.
+    entries:
+      - label: Monthly Subscription
+        name: monthly_subscription
+        type: boolean
+        metric: subscription
+        limit: 1
+        timeFrame: month
+        geo: global
+        unit: 1
+        price: '60'
+        userMultiplied: false
+      - label: Annual Subscription (per month)
+        name: annual_subscription
+        type: boolean
+        metric: subscription
+        limit: 1
+        timeFrame: month
+        geo: global
+        unit: 1
+        price: '55'
+        userMultiplied: false
+      - label: Private Collections
+        name: private_collections
+        type: boolean
+        metric: feature
+        limit: 1
+        timeFrame: month
+        geo: global
+        unit: 1
+        price: '0'
+        userMultiplied: false
+      - label: Private GitHub Repos
+        name: private_github_repos
+        type: boolean
+        metric: feature
+        limit: 1
+        timeFrame: month
+        geo: global
+        unit: 1
+        price: '0'
+        userMultiplied: false
+      - label: Private NPM Registry
+        name: private_npm_registry
+        type: boolean
+        metric: feature
+        limit: 1
+        timeFrame: month
+        geo: global
+        unit: 1
+        price: '0'
+        userMultiplied: false
+      - label: Team Management Console
+        name: team_management_console
+        type: boolean
+        metric: feature
+        limit: 1
+        timeFrame: month
+        geo: global
+        unit: 1
+        price: '0'
+        userMultiplied: false
+  - id: stackblitz-enterprise
+    name: Enterprise
+    type: enterprise
+    description: Custom enterprise plan with WebContainer API access, GitLab/Bitbucket/GitHub Enterprise support, custom SSO, and self-hosting options.
+    entries:
+      - label: Enterprise License
+        name: enterprise_license
+        type: boolean
+        metric: subscription
+        limit: 1
+        timeFrame: month
+        geo: global
+        unit: 1
+        price: 'custom'
+        userMultiplied: false
+      - label: WebContainer API Access
+        name: webcontainer_api_access
+        type: boolean
+        metric: feature
+        limit: 1
+        timeFrame: month
+        geo: global
+        unit: 1
+        price: '0'
+        userMultiplied: false
+      - label: WebContainer API Sessions (included)
+        name: webcontainer_api_sessions
+        type: quota
+        metric: sessions
+        limit: 500
+        timeFrame: month
+        geo: global
+        unit: 1
+        price: '0'
+        userMultiplied: false
+      - label: Self-Hosting (On-Premise or VPC)
+        name: self_hosting
+        type: boolean
+        metric: feature
+        limit: 1
+        timeFrame: month
+        geo: global
+        unit: 1
+        price: '0'
+        userMultiplied: false
+      - label: Custom SSO (SAML2)
+        name: custom_sso
+        type: boolean
+        metric: feature
+        limit: 1
+        timeFrame: month
+        geo: global
+        unit: 1
+        price: '0'
+        userMultiplied: false
+      - label: Dedicated Engineer Support
+        name: dedicated_engineer_support
+        type: boolean
+        metric: feature
+        limit: 1
+        timeFrame: month
+        geo: global
+        unit: 1
+        price: '0'
+        userMultiplied: false

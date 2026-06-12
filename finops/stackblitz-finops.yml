@@ -1,0 +1,49 @@
+---
+specification: FinOps Framework
+specificationVersion: '1.0'
+schema: https://www.finops.org/framework/
+provider: StackBlitz
+providerId: stackblitz
+created: '2026-06-12'
+modified: '2026-06-12'
+reconciled: true
+tags:
+  - FinOps
+  - FOCUS
+  - Developer Tools
+  - WebContainers
+description: FOCUS-aligned FinOps for StackBlitz covering IDE platform subscriptions and WebContainer API session consumption.
+sources:
+  - https://stackblitz.com/pricing
+alignedWith:
+  framework: FinOps Foundation Framework
+  frameworkUrl: https://www.finops.org/framework/
+  dataSpec: FOCUS
+  dataSpecVersion: '1.3'
+  dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
+publisherName: StackBlitz
+serviceCategory: Developer Tools
+billingModel:
+  pricingCategory: Subscription + Usage-Based
+  billingFrequency: Monthly
+  billingCurrency: USD
+focusColumns:
+  ServiceName: StackBlitz
+  ServiceCategory: Developer Tools
+  ProviderName: StackBlitz
+  PublisherName: StackBlitz
+  BillingCurrency: USD
+meters:
+  - name: Platform Subscription
+    unit: seat/month
+    aggregation: sum
+  - name: WebContainer API Sessions
+    unit: sessions/month
+    aggregation: sum
+principles:
+  - name: Visibility
+    description: Track StackBlitz seat counts and WebContainer API session usage monthly across all teams and projects.
+  - name: Optimization
+    description: Right-size team seat subscriptions; monitor WebContainer API session consumption to avoid exceeding the 500-session commercial limit before engaging an enterprise license.
+  - name: Accountability
+    description: Assign StackBlitz costs to engineering teams or product lines using tagging in the team management console.

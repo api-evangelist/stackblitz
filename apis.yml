@@ -1,0 +1,99 @@
+---
+aid: stackblitz
+name: StackBlitz
+description: >-
+  StackBlitz is an online development environment that runs Node.js applications
+  entirely in the browser using WebContainers, a WebAssembly-based operating
+  system that boots Node.js in milliseconds without a remote server. It serves
+  developers, technical writers, and platform teams who need interactive coding
+  environments, documentation playgrounds, or embedded IDE experiences. The
+  platform provides a JavaScript SDK for programmatically creating and embedding
+  projects, and a WebContainer API for booting full Node.js runtimes directly
+  inside web applications. StackBlitz also offers Codeflow, a one-click GitHub
+  integration for pull request review and issue fixing workflows.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Developer Tools
+  - WebAssembly
+  - Node.js
+  - IDE
+  - Browser Runtime
+  - Code Environments
+url: https://raw.githubusercontent.com/api-evangelist/stackblitz/refs/heads/main/apis.yml
+created: '2026-06-12'
+modified: '2026-06-12'
+specificationVersion: '0.19'
+apis:
+  - aid: stackblitz:javascript-sdk
+    name: StackBlitz JavaScript SDK
+    description: >-
+      A lightweight (3kB gzipped) JavaScript SDK that lets developers
+      programmatically create, open, and embed StackBlitz projects in web pages,
+      documentation sites, or blog posts. Provides six primary methods including
+      openProject, embedProject, openGithubProject, embedGithubProject,
+      openProjectId, and embedProjectId, along with a VM interface for
+      controlling embedded environments post-mount.
+    humanURL: https://developer.stackblitz.com/platform/api/javascript-sdk
+    tags:
+      - JavaScript
+      - SDK
+      - Embed
+      - IDE
+    properties:
+      - type: Documentation
+        url: https://developer.stackblitz.com/platform/api/javascript-sdk
+      - type: SDKOptions
+        url: https://developer.stackblitz.com/platform/api/javascript-sdk-options
+      - type: VMInterface
+        url: https://developer.stackblitz.com/platform/api/javascript-sdk-vm
+  - aid: stackblitz:webcontainer-api
+    name: WebContainer API
+    description: >-
+      A browser-based runtime API that executes Node.js applications and
+      operating system commands directly inside a browser tab using WebAssembly.
+      Provides classes and methods for booting a container instance, mounting
+      file systems, spawning processes, managing files, and handling OAuth
+      authentication. Supports npm, pnpm, and yarn natively and emits events
+      for port bindings and server-ready states. Commercial use in production
+      for-profit applications requires a license.
+    humanURL: https://webcontainers.io/api
+    baseURL: https://webcontainers.io
+    tags:
+      - WebContainers
+      - Node.js
+      - Browser Runtime
+      - WebAssembly
+    properties:
+      - type: Documentation
+        url: https://webcontainers.io/api
+      - type: GettingStarted
+        url: https://webcontainers.io/guides/quickstart
+common:
+  - type: Website
+    url: https://stackblitz.com
+  - type: Documentation
+    url: https://developer.stackblitz.com
+  - type: WebContainersDocumentation
+    url: https://webcontainers.io
+  - type: GitHubOrganization
+    url: https://github.com/stackblitz
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/stackblitz
+  - type: Blog
+    url: https://blog.stackblitz.com
+  - type: Pricing
+    url: https://stackblitz.com/pricing
+  - type: StatusPage
+    url: https://status.stackblitz.com
+  - type: X
+    url: https://x.com/stackblitz
+  - type: Plans
+    url: plans/stackblitz-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/stackblitz-rate-limits.yml
+  - type: FinOps
+    url: finops/stackblitz-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
