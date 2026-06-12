@@ -1,0 +1,14 @@
+{
+  "repo": "stackblitz",
+  "feeds": [
+    {
+      "source": "https://blog.stackblitz.com",
+      "feed_url": "https://blog.stackblitz.com/rss.xml",
+      "title": "StackBlitz Blog",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-06-12T00:00:00Z"
+}

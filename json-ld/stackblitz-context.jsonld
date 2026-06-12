@@ -1,0 +1,138 @@
+{
+  "@context": {
+    "@vocab": "https://developer.stackblitz.com/vocab#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "StackBlitzProject": {
+      "@id": "schema:SoftwareApplication",
+      "@type": "@id"
+    },
+    "WebContainerInstance": {
+      "@id": "@vocab:WebContainerInstance",
+      "@type": "@id"
+    },
+    "FileSystemTree": {
+      "@id": "@vocab:FileSystemTree",
+      "@type": "@id"
+    },
+
+    "projectId": {
+      "@id": "schema:identifier",
+      "@type": "xsd:string"
+    },
+    "title": {
+      "@id": "schema:name",
+      "@type": "xsd:string"
+    },
+    "description": {
+      "@id": "schema:description",
+      "@type": "xsd:string"
+    },
+    "template": {
+      "@id": "@vocab:template",
+      "@type": "xsd:string"
+    },
+    "dependencies": {
+      "@id": "@vocab:dependencies",
+      "@type": "@id"
+    },
+    "files": {
+      "@id": "@vocab:files",
+      "@type": "@id"
+    },
+    "settings": {
+      "@id": "@vocab:settings",
+      "@type": "@id"
+    },
+
+    "embedOptions": {
+      "@id": "@vocab:embedOptions",
+      "@type": "@id"
+    },
+    "openOptions": {
+      "@id": "@vocab:openOptions",
+      "@type": "@id"
+    },
+    "origin": {
+      "@id": "@vocab:origin",
+      "@type": "xsd:string"
+    },
+    "newWindow": {
+      "@id": "@vocab:newWindow",
+      "@type": "xsd:boolean"
+    },
+    "clickToLoad": {
+      "@id": "@vocab:clickToLoad",
+      "@type": "xsd:boolean"
+    },
+    "hideExplorer": {
+      "@id": "@vocab:hideExplorer",
+      "@type": "xsd:boolean"
+    },
+    "view": {
+      "@id": "@vocab:view",
+      "@type": "xsd:string"
+    },
+    "theme": {
+      "@id": "@vocab:theme",
+      "@type": "xsd:string"
+    },
+
+    "VMInterface": {
+      "@id": "@vocab:VMInterface",
+      "@type": "@id"
+    },
+    "applyFsDiff": {
+      "@id": "@vocab:applyFsDiff"
+    },
+    "getFsSnapshot": {
+      "@id": "@vocab:getFsSnapshot"
+    },
+    "getDependencies": {
+      "@id": "@vocab:getDependencies"
+    },
+    "editor": {
+      "@id": "@vocab:editor",
+      "@type": "@id"
+    },
+    "preview": {
+      "@id": "@vocab:preview",
+      "@type": "@id"
+    },
+
+    "WebContainerProcess": {
+      "@id": "@vocab:WebContainerProcess",
+      "@type": "@id"
+    },
+    "SpawnOptions": {
+      "@id": "@vocab:SpawnOptions",
+      "@type": "@id"
+    },
+    "FileSystemAPI": {
+      "@id": "@vocab:FileSystemAPI",
+      "@type": "@id"
+    },
+    "portBinding": {
+      "@id": "@vocab:portBinding",
+      "@type": "@id"
+    },
+    "serverReadyEvent": {
+      "@id": "@vocab:serverReadyEvent",
+      "@type": "@id"
+    },
+
+    "provider": {
+      "@id": "schema:provider",
+      "@type": "@id"
+    },
+    "url": {
+      "@id": "schema:url",
+      "@type": "xsd:anyURI"
+    },
+    "version": {
+      "@id": "schema:version",
+      "@type": "xsd:string"
+    }
+  }
+}
