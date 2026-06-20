@@ -12,7 +12,7 @@ description: >-
   inside web applications. StackBlitz also offers Codeflow, a one-click GitHub
   integration for pull request review and issue fixing workflows.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Developer Tools
   - WebAssembly
