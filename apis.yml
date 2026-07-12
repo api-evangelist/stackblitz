@@ -70,6 +70,8 @@ apis:
       - type: GettingStarted
         url: https://webcontainers.io/guides/quickstart
 common:
+  - type: DomainSecurity
+    url: security/stackblitz-domain-security.yml
   - type: Website
     url: https://stackblitz.com
   - type: Documentation
