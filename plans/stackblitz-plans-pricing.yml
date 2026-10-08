@@ -241,3 +241,53 @@ plans:
         unit: 1
         price: '0'
         userMultiplied: false
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  units:
+  - data
+  - feature
+  - object
+  - period
+  plans:
+  - name: Personal
+    access: free
+    model: free
+    model_how: derived
+    units:
+    - data
+    - feature
+    - object
+    periods:
+    - month
+    - per-use
+  - name: Pro
+    access: paid
+    model: free
+    model_how: derived
+    units:
+    - feature
+    - period
+    periods:
+    - month
+  - name: Teams
+    access: paid
+    model: free
+    model_how: derived
+    units:
+    - feature
+    - period
+    periods:
+    - month
+  - name: Enterprise
+    access: enterprise
+    model: free
+    model_how: derived
+    units:
+    - feature
+    - object
+    - period
+    periods:
+    - month
