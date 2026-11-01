@@ -1,4 +1,4 @@
-# StackBlitz (stackblitz)
+# StackBlitz
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,51 +64,113 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-StackBlitz is an online development environment that runs Node.js applications entirely in the browser using WebContainers, a WebAssembly-based operating system that boots Node.js in milliseconds without a remote server. It serves developers, technical writers, and platform teams who need interactive coding environments, documentation playgrounds, or embedded IDE experiences. The platform provides a JavaScript SDK for programmatically creating and embedding projects, and a WebContainer API for booting full Node.js runtimes directly inside web applications.
+StackBlitz is an online development environment that runs Node.js applications entirely in the browser using WebContainers, a WebAssembly-based operating system that boots Node.js in milliseconds without a remote server. It serves developers, technical writers, and platform teams who need interactive coding environments, documentation playgrounds, or embedded IDE experiences. The platform provides a JavaScript SDK for programmatically creating and embedding projects, and a WebContainer API for booting full Node.js runtimes directly inside web applications. StackBlitz also offers Codeflow, a one-click GitHub integration for pull request review and issue fixing workflows.
 
-APIs.json: [https://raw.githubusercontent.com/api-evangelist/stackblitz/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/stackblitz/refs/heads/main/apis.yml)
+**Areas:** Developer Tools · WebAssembly · Node.js · IDE · Browser Runtime · Code Environments
 
-Naftiko Run: [https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=stackblitz-api-evangelist&utm_content=repo](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=stackblitz-api-evangelist&utm_content=repo)
+## StackBlitz on APIs.io
 
-## Tags
+Everything profiled for StackBlitz is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/stackblitz/](https://apis.io/providers/stackblitz/)** — or go straight to one of the APIs or properties below.
 
-- Developer Tools
-- WebAssembly
-- Node.js
-- IDE
-- Browser Runtime
-- Code Environments
+### APIs (2)
 
-## APIs
+- [StackBlitz JavaScript SDK](https://apis.io/apis/stackblitz/javascript-sdk/) — A lightweight (3kB gzipped) JavaScript SDK that lets developers programmatically create, open, and embed StackBlitz projects in web pages, documentation…
+- [WebContainer API](https://apis.io/apis/stackblitz/webcontainer-api/) — A browser-based runtime API that executes Node.js applications and operating system commands directly inside a browser tab using WebAssembly. Provides…
 
-- **StackBlitz JavaScript SDK** — Programmatically create, open, and embed StackBlitz projects; docs at [https://developer.stackblitz.com/platform/api/javascript-sdk](https://developer.stackblitz.com/platform/api/javascript-sdk)
-- **WebContainer API** — Browser-based Node.js runtime API using WebAssembly; docs at [https://webcontainers.io/api](https://webcontainers.io/api)
+### Published properties
 
-## Plans / Rate Limits / FinOps
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- [Plans & Pricing](plans/stackblitz-plans-pricing.yml) — Personal (free), Pro ($25/mo), Teams ($60/mo), Enterprise (custom)
-- [Rate Limits](rate-limits/stackblitz-rate-limits.yml) — 500 WebContainer API sessions/month for commercial plans; unlimited for open source
-- [FinOps](finops/stackblitz-finops.yml) — FOCUS-aligned tracking for seat subscriptions and WebContainer API session consumption
+#### JSON-LD (1)
 
-## Timestamps
+Linked-data contexts for the provider's vocabulary.
 
-- Created: 2026-06-12
-- Modified: 2026-06-12
+- [Stackblitz Context](https://apis.io/jsonld/stackblitz/stackblitz-context/)
 
-## Common Properties
+#### Security (1)
 
-| Type | URL |
-|------|-----|
-| Website | https://stackblitz.com |
-| Documentation | https://developer.stackblitz.com |
-| WebContainers Docs | https://webcontainers.io |
-| GitHub Organization | https://github.com/stackblitz |
-| LinkedIn | https://www.linkedin.com/company/stackblitz |
-| Blog | https://blog.stackblitz.com |
-| Pricing | https://stackblitz.com/pricing |
-| Status Page | https://status.stackblitz.com |
-| X / Twitter | https://x.com/stackblitz |
+Authentication, trust centre, and vulnerability disclosure.
 
-## Maintainers
+- [Stackblitz Domain Security](https://apis.io/security/stackblitz/stackblitz-domain-security/)
 
-- Kin Lane / kin@apievangelist.com
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Stackblitz Plans Pricing](https://apis.io/plans/stackblitz/stackblitz-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Stackblitz Rate Limits](https://apis.io/rate-limits/stackblitz/stackblitz-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Stackblitz Finops](https://apis.io/finops/stackblitz/stackblitz-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://stackblitz.com)
+- [Documentation](https://developer.stackblitz.com)
+- [Pricing](https://stackblitz.com/pricing)
+- [Blog](https://blog.stackblitz.com)
+- [GitHub](https://github.com/stackblitz)
+- [Status](https://status.stackblitz.com)
+
+## API Evangelist rating
+
+**Kin Score 19.3** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 10.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 23.7 |
+| Developer ergonomics | 23.8 |
+| Access clarity | 18.4 |
+
+**Agent readiness 0.6** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/stackblitz/](https://apis.io/providers/stackblitz/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for StackBlitz: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/stackblitz/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
